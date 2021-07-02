@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+/* 导航条 */
+.topnav {
+  overflow: hidden;
+  background-color:rgb(247,242,224,0.9);
+}
+ 
+/* 导航条链接 */
+.topnav a {
+  float: left;
+  display: block;
+  color: rgb(42,10,27);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ /* 链接颜色修改 */
+.topnav a:hover {
+  background-color:#E1F5A9;
+  color:rgb(42,10,27);
+}
+/*首页标题（头部）*/
+.header{
+   font-size:50px;
+   color:rgb(88,250,88,0.5);
+   font-family:楷体;
+   text-align:center;
+}
+
+
+/*首页背景（图片）*/
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+  background:url("https://gitee.com/bysevil/img/raw/master/img/beijing.jpg");
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-size:cover;
+}
+
+/*首页搜索框*/
+.box{
+		width:500px;
+		height:40px;
+		border:2px solid rgb(247,242,224);
+		margin:auto;
+	 }
+.box:hover{
+		width:500px;
+		height:40px;
+		border:2px solid rgb(225,245,169);
+		margin:auto;
+	 }
+.input{
+		float:left;
+		width:400px;/*宽400*/
+		height:38px;/*高38（因为文本框内外边框要占用1像素所以总体高度减2，其他盒子同理）*/
+		outline:none;
+		border:none;/*取消文本框内外边框*/
+		color:rgb(42,10,27);
+	 }
+.submit{
+	    float:left;
+     	width:96px;
+	    height:40px;
+	    color:rgb(42,10,27);
+	    background-color:rgb(247,242,224);
+	    border:none;
+	    outline:none;/*取消边框和外边框将按钮边框去掉*/
+     }
+.submit:hover{
+	    float:left;
+     	width:96px;
+	    height:40px;
+	    color:rgb(42,10,27);
+	    background-color:rgb(225,245,169);
+	    border:none;
+	    outline:none;/*取消边框和外边框将按钮边框去掉*/
+     }
+	 
