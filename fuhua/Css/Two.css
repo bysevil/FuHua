@@ -1,0 +1,78 @@
+/*设置网页为响应式布局*/
+* {
+  box-sizing: border-box;
+}
+/*背景*/
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: rgb(241,241,241);
+  background:url("https://gitee.com/bysevil/img/raw/master/img/beijing.jpg");
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-size:cover;
+}
+
+ /* 头部标题 */
+.header {
+  padding: 30px;
+  text-align: center;
+  background-color:rgb(0.1);
+}
+.header h1{
+   font-size:80px;
+   color:rgb(88,250,88,0.7);
+   font-family:楷体;
+}
+.header p{
+	font-size: 30px;
+	font-family:楷体;
+}
+ 
+/* 导航条 */
+.topnav {
+  overflow: hidden;
+  background-color:rgb(247,242,224,0.9);
+}
+/* 链接 */
+a{
+  float: left;
+  display: block;
+  color: rgb(42,10,27);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/* 链接颜色修改 */
+a:hover {
+  background-color:#E1F5A9;
+  color:rgb(42,10,27); 
+}
+/* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
+@media screen and (max-width: 400px) {
+   a {
+    float: none;
+    width: 100%;
+  }
+}
+/* 列后面清除浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* 响应式布局 - 小于 600 px 时改为上下布局 */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+/* 文章卡片效果 */
+.card {
+  background-color: rgb(247,242,224,0.7);
+  padding: 20px;
+  margin:50px 20px;
+  overflow: hidden;
+}
+
+
